@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
+import Messages from "./components/Messages";
 import Navbar from "./components/Navbar";
+import RoomsList from "./components/Rooms";
 import UsersList from "./components/Users";
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
             </Route>
             <Route path="/users">
               <UsersList />
+            </Route>
+            <Route path="/rooms">
+              <RoomsList />
+            </Route>
+            <Route path="/messages">
+              <Messages />
             </Route>
           </Switch>
         </div>
